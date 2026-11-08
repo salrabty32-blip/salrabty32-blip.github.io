@@ -1,84 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SALEH AL-RABTI | Ethical Hacker</title>
+<title>صالح الرابطي | Salrabty</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Courier New',monospace}
-body{background:#000;color:#00ff41;overflow-x:hidden}
-canvas{position:fixed;top:0;left:0;z-index:-1}
-nav{display:flex;justify-content:space-between;align-items:center;padding:20px 5%;background:rgba(0,0,0,.7);border-bottom:1px solid #00ff41;position:sticky;top:0}
-.logo{font-size:24px;font-weight:bold;color:#00ff41}
-.logo span{color:#fff}
-nav a{color:#fff;text-decoration:none;margin:0 15px}
-nav a:hover{color:#00ff41}
-.hero{text-align:center;padding:100px 20px 60px}
-.hero h1{font-size:55px;text-shadow:0 0 20px #00ff41;line-height:1.1}
-.hero p{color:#fff;margin:15px 0;font-size:18px}
-.btn{display:inline-block;padding:12px 28px;margin:10px;background:#00ff41;color:#000;font-weight:bold;text-decoration:none;border-radius:5px}
-.btn2{border:1px solid #00ff41;color:#00ff41;background:transparent}
-.section{max-width:1000px;margin:40px auto;padding:0 20px}
-.cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
-.card{border:1px solid #00ff41;background:rgba(0,20,0,.8);padding:25px;border-radius:10px}
-.card h3{margin-bottom:12px;color:#fff}
-.card p, .card li{color:#ccffcc;line-height:1.7;font-size:15px;list-style:none}
-.skills span{display:inline-block;border:1px solid #00ff41;padding:6px 12px;margin:5px;border-radius:20px;font-size:14px}
-.projects{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.project{border:1px solid #333;background:#0a0a0a;padding:20px;border-radius:10px}
-.project h4{color:#00ff41}
-.project p{color:#ddd;margin:10px 0}
-footer{text-align:center;padding:30px;color:#888;border-top:1px solid #222;margin-top:50px}
-@media(max-width:700px){.cards,.projects{grid-template-columns:1fr}.hero h1{font-size:36px}}
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Tahoma, sans-serif; }
+body { background:#0f0f0f; color:white; text-align:center; padding:20px; }
+.container { max-width:420px; margin:0 auto; background:#1a1a1a; border-radius:25px; padding:25px; border:1px solid #333; }
+.logo { width:110px; height:110px; background:#25D366; border-radius:50%; margin:0 auto 15px; display:flex; align-items:center; justify-content:center; font-size:50px; }
+h1 { font-size:26px; margin-bottom:5px; }
+p.sub { color:#aaa; font-size:15px; margin-bottom:20px; }
+.phone-box { background:#222; padding:12px; border-radius:12px; margin-bottom:20px; font-size:19px; font-weight:bold; letter-spacing:1px; }
+.btn { display:block; width:100%; padding:16px; border-radius:15px; text-decoration:none; font-size:19px; font-weight:bold; margin-bottom:12px; }
+.btn-whatsapp { background:#25D366; color:white; }
+.btn-call { background:white; color:black; }
+.btn-tiktok { background:#000; color:white; border:1px solid #444; }
+.footer { margin-top:20px; color:#777; font-size:13px; }
 </style>
 </head>
 <body>
-<canvas id="matrix"></canvas>
-<nav><div class="logo">SA<span> >_</span></div><div><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav>
+<div class="container">
+<div class="logo">📱</div>
+<h1>صالح الرابطي</h1>
+<p class="sub">Salrabty - للتواصل والطلب</p>
 
-<div class="hero">
-<h1>SALEH<br>AL-RABTI</h1>
-<p>Ethical Hacker | Software & Computing | Benghazi, Libya</p>
-<p style="color:#aaa">Securing systems. Building secure software. Exploring vulnerabilities ethically.</p>
-<a class="btn" href="#projects">View Projects ></a>
-<a class="btn btn2" href="#contact">_ Contact Me</a>
-</div>
+<div class="phone-box">0919463849</div>
 
-<div class="section" id="about">
-<div class="cards">
-<div class="card"><h3>👤 About Me</h3><p>I'm Saleh Al-Rabti, an ethical hacker from Benghazi, Libya. I specialize in penetration testing, secure software development, and vulnerability research. Passionate about protecting digital infrastructure.</p></div>
-<div class="card"><h3>🛡️ Skills</h3><p>Penetration Testing, Network Security, Linux, Web Security, Python, Bash, C++</p></div>
-<div class="card"><h3>📩 Contact</h3><p>Location: Benghazi, Libya<br>GitHub: github.com/saleh-alrabti<br>LinkedIn: linkedin.com/in/saleh-alrabti</p></div>
-</div>
-</div>
+<a class="btn btn-whatsapp" href="https://wa.me/218919463849?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D9%86%D8%A8%D9%8A%20%D9%86%D8%B3%D8%AA%D9%81%D8%B3%D8%B1">💬 واتساب - WhatsApp Me</a>
 
-<div class="section" id="skills">
-<h2 style="text-align:center;margin-bottom:20px">MY ARSENAL</h2>
-<div style="text-align:center"><span class="skills"><span>Python</span><span>Bash</span><span>Linux</span><span>Networking</span><span>TryHackMe</span><span>Web Security</span><span>C++</span><span>Nmap</span><span>Wireshark</span></span></div>
-</div>
+<a class="btn btn-call" href="tel:+218919463849">📞 اتصل بيا</a>
 
-<div class="section" id="projects">
-<h2 style="text-align:center;margin-bottom:20px">PROJECTS</h2>
-<div class="projects">
-<div class="project"><h4>01 - LAN Topology Lab</h4><p>Analyzed Bus vs Star topology flaws and how a single cable cut can take down a whole network.</p><p style="color:#00ff41">> Networking / TryHackMe</p></div>
-<div class="project"><h4>02 - Secure Login System</h4><p>Built a secure login system with hashing and protection against SQL injection.</p><p style="color:#00ff41">> Python / Security</p></div>
-</div>
-</div>
+<a class="btn btn-tiktok" href="https://www.tiktok.com/@salrabty32">🎵 تابعني على تيك توك</a>
 
-<div class="section" id="contact">
-<div class="card" style="text-align:center"><h3>Let's Work Together</h3><p>Have a project or want to learn ethical hacking together?</p><br><a class="btn" href="https://wa.me/218000000000">WhatsApp Me</a></div>
+<p class="footer">salrabty32-blip.github.io<br>© 2026 صالح الرابطي</p>
 </div>
-
-<footer>© 2026 Saleh Al-Rabti — Built with Security & Code | All activity is ethical and legal</footer>
-
-<script>
-const c=document.getElementById('matrix');const ctx=c.getContext('2d');
-c.height=window.innerHeight;c.width=window.innerWidth;
-const chars="01アイウエオカキクケコサシスセソ0123456789ABCDEF$#@";
-const font=16;const cols=c.width/font;const drops=[];
-for(let i=0;i<cols;i++)drops[i]=1;
-function draw(){ctx.fillStyle="rgba(0,0,0,0.05)";ctx.fillRect(0,0,c.width,c.height);ctx.fillStyle="#00ff41";ctx.font=font+"px monospace";for(let i=0;i<drops.length;i++){const t=chars[Math.floor(Math.random()*chars.length)];ctx.fillText(t,i*font,drops[i]*font);if(drops[i]*font>c.height&&Math.random()>0.975)drops[i]=0;drops[i]++;}}
-setInterval(draw,50);
-</script>
 </body>
-  </html>
+</html>
